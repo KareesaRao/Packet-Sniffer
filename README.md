@@ -1,4 +1,4 @@
-\# Python Packet Sniffer
+# Python Packet Sniffer
 
 
 
@@ -6,75 +6,75 @@ This is a command-line packet sniffing and analysis tool built with Python and S
 
 
 
-\## Features
+## Features
 
-\* Captures live network traffic on a specified interface.
+* Captures live network traffic on a specified interface.
 
-\* Parses and displays L3 (IP) and L4 (TCP/UDP) information.
+* Parses and displays L3 (IP) and L4 (TCP/UDP) information.
 
-\* Detects and displays clear-text HTTP request details (Host, Path, Method).
+* Detects and displays clear-text HTTP request details (Host, Path, Method).
 
-\* Includes a basic keyword scanner for clear-text payloads (e.g., "user", "pass").
-
-
-
-\## Requirements
-
-\* Python 3.x
-
-\* Scapy
-
-\* Root / Administrator privileges (for packet capture)
+* Includes a basic keyword scanner for clear-text payloads (e.g., "user", "pass").
 
 
 
-\## Installation
+## Requirements
 
-1\.  Clone the repository:
+* Python 3.x
 
-&nbsp;   ```bash
+* Scapy
 
-&nbsp;   git clone \[https://github.com/KareesaRao/Packet-Sniffer.git](https://github.com/KareesaRao/Packet-Sniffer.git)
-
-&nbsp;   cd Packet-Sniffer
-
-&nbsp;   ```
-
-2\.  Create and activate a virtual environment:
-
-&nbsp;   ```bash
-
-&nbsp;   # On Windows
-
-&nbsp;   python -m venv venv
-
-&nbsp;   .\\venv\\Scripts\\activate
-
-&nbsp;   ```
-
-3\.  Install dependencies:
-
-&nbsp;   ```bash
-
-&nbsp;   pip install -r requirements.txt
-
-&nbsp;   ```
+* Root / Administrator privileges (for packet capture)
 
 
 
-\## Usage
+## Installation
 
-1\.  Find your active network interface name (e.g., 'eth0', 'WiFi').
+1.  Clone the repository:
 
-2\.  Update the `INTERFACE\_TO\_SNIFF` variable in `sniffer.py`.
+```bash
 
-3\.  Run the script with elevated privileges:
+git clone \[https://github.com/KareesaRao/Packet-Sniffer.git](https://github.com/KareesaRao/Packet-Sniffer.git)
 
-&nbsp;   ```bash
+cd Packet-Sniffer
 
-&nbsp;   # On Windows (in an Admin terminal)
+```
 
-&nbsp;   python sniffer.py
+2.  Create and activate a virtual environment:
 
-&nbsp;   ```
+```bash
+
+# On Windows
+
+python -m venv venv
+
+.\\venv\\Scripts\\activate
+
+```
+
+3.  Install dependencies:
+
+```bash
+
+pip install -r requirements.txt
+
+```
+
+
+
+## Usage
+
+1.  Find your active network interface name (e.g., 'eth0', 'WiFi').
+
+2.  Update the `INTERFACE\_TO\_SNIFF` variable in `sniffer.py`.
+
+3.  Run the script with elevated privileges:
+
+```bash
+
+# On Windows (in an Admin terminal)
+
+python sniffer.py
+
+```
 
